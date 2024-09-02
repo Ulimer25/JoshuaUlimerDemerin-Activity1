@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="logo2.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Web site created using create-snowpack-app" />
+    <link rel="stylesheet" type="text/css" href="/index.css" />
+    <title>ToDo List</title>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <script type="module" src="/dist/index.js"></script>
+
+    <div style = "text-align: center; margin-bottom: 20px;">
+      <img src = "logo1.png" alt = "ToDo List Logo" style = "max-width: 200px; height: auto;">
+      <p>ToDo List</p>
+    </div>
+    
+    <form id = "new-task-form">
+      <input type = "text" id = "new-task-title" placeholder = "Enter a task">
+      <button type = "submit" id = "addbtn"> Add </button>
+    </form>
+
+    <ul id = "list"></ul>
+
+  </body>
+</html>
