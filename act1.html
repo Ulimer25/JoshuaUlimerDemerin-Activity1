@@ -3,43 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>ToDo List</title>
     <link rel="stylesheet" href="act1.css">
     <link rel="icon" href="to-do-list.png">
-
 </head>
 
 <body>
-
     <div class = "main-div">
-
         <img src = "to-do-list.png" alt = "ToDo List Logo" class = "centpic">
         <p class = "p1"> Make Your List </p>
 
         <div class = "form-div">
-
             <form id = "new_task_form">
-    
                 <input type = "text" id = "new_task_title" placeholder = "Enter your task here." maxlength = "50">
-                <input type = "submit" id = "addbtn" value="Add">
-    
+                <input type = "submit" id = "addbtn" value = "Add">
+                <i class = "calendar-icon" id = "calendarIcon"> &#128197; </i>
+                <input type = "date" id = "due_date">
             </form>
-    
         </div>
 
-        <div class = "ul-div">
+        <div class = "sort-div">
+            <label for = "sort_options"> Sort By: </label>
+            <select id = "sort_options">
+                <option value = "alphabetical"> Alphabetical </option>
+                <option value = "status"> Status </option>
+            </select>
+        </div>
 
+        <div class = "list-div">
             <ul id = "list"></ul>
-
         </div>
-
     </div>
 
-    
-
-    <script src = "act1.js"></script>   
-    
+    <script src = "act1.js"></script>
 </body>
-
 </html>

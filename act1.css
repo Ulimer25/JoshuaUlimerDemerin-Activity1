@@ -1,19 +1,23 @@
 body {
-    background-color: #D8A25E;
+    background-image: url(body1.png);
+    background-size: cover;
     align-items: center;
     display: flex;
     flex-direction: column;
 }
 
 .main-div {
-    text-align: center; 
+    text-align: center;
     margin-bottom: 20px;
     width: 50%;
     border-radius: 20px;
+    background-color: white;
+    padding-right: 40px;
+    margin-top: 20px;
 }
 
 .centpic {
-    max-width: 200px; 
+    max-width: 200px;
     height: auto;
     margin-top: 20px;
 }
@@ -22,7 +26,7 @@ body {
     font-family: Arial;
     font-weight: bold;
     font-size: 40px;
-    color: white;
+    color: rgb(234, 182, 12);
     margin-top: 0;
 }
 
@@ -30,39 +34,39 @@ body {
     background-color: white;
     border-radius: 5px;
     color: black;
-    width: 50%;
+    width: 45%;
     height: 30px;
-    border-width: 0;
+    border-color: whitesmoke;
 }
 
 #addbtn {
-    background-color: white;
-    height: 33px;
+    background-color: whitesmoke;
+    height: 36px;
     border-radius: 5px;
     cursor: pointer;
-    border-width: 0;
+    border-color: whitesmoke;
 }
 
 #delbtn {
-    border-width: 0;
-    background-color: rgb(249, 220, 182);
+    border-color: whitesmoke;
+    background-color: whitesmoke;
     border-radius: 10px;
 }
 
 #delbtn:hover {
-    background-color:#D8A25E;
-    transition: 0.5s;
+    background-color: rgb(227, 227, 227);
+    transition: 0.8s;
+    cursor: pointer;
 }
 
 #addbtn:hover {
-    background-color: rgb(249, 220, 182);
-    transition: 0.5s;
+    background-color: rgb(227, 227, 227);
+    transition: 0.8s;
 }
 
 #list li {
     display: flex;
-    padding: 10px;
-    background-color: white;
+    padding: 5px;
     margin-bottom: 5px;
     border-radius: 25px;
     justify-content: space-between;
@@ -70,5 +74,39 @@ body {
 }
 
 .completed {
-text-decoration: line-through;
+    text-decoration: line-through;
+}
+
+.expired {
+    color: red;
+}
+
+.calendar-icon {
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.sort-div {
+    display: flex;
+    flex-direction: inline;
+    justify-items: left;
+    margin-top: 50px;
+    margin-left: 45px;
+    margin-bottom: 30px;
+}
+
+#sort_options {
+    border-radius: 5px;
+    border-color: whitesmoke;
+}
+
+label {
+    font-family: Arial, sans-serif;
+    margin-right: 5px;
+}
+
+#due_date{
+    font-family: Arial, sans-serif;
+    border-radius: 5px;
+    border-color: whitesmoke;
 }
